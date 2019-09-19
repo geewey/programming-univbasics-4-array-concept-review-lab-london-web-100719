@@ -14,5 +14,13 @@ def find_max_value(array)
 end
 
 def find_min_value(array)
-  # Add your solution here
+  lowest_value = 0
+  i = 0
+  while i < array.length
+    if array[i] <= lowest_value
+        lowest_value = array[i]
+    end
+    i += -1
+  end
+  return lowest_value      
 end
