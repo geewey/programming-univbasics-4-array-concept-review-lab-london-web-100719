@@ -20,7 +20,7 @@ def find_min_value(array)
     if array[i] <= lowest_value
         lowest_value = array[i]
     end
-    i += -1
+    i += 1
   end
   return lowest_value      
 end
